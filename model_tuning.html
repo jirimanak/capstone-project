@@ -12036,7 +12036,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[121]:</div>
+<div class="prompt input_prompt">In&nbsp;[161]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">stopwatch</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
@@ -12087,7 +12087,7 @@ div#notebook {
 <span class="n">all_data</span> <span class="o">=</span> <span class="n">all_data</span><span class="p">[</span><span class="n">keep_cols</span><span class="p">]</span>
 
 <span class="c1"># UNSKEW</span>
-<span class="n">unskew_data</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">unskew_data</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="k">if</span> <span class="n">unskew_data</span><span class="p">:</span>
     <span class="n">skewed_data</span> <span class="o">=</span> <span class="n">check_skewed</span><span class="p">(</span><span class="n">all_data</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
     <span class="n">all_data</span> <span class="o">=</span> <span class="n">unskew_boxcox1p</span><span class="p">(</span><span class="n">all_data</span><span class="p">,</span> <span class="n">skewed_data</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
@@ -12372,7 +12372,7 @@ XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[159]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBRegressor</span>
@@ -12407,7 +12407,7 @@ XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[162]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
@@ -12436,7 +12436,7 @@ XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[163]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">xgb_rmse</span><span class="p">,</span> <span class="n">xgb_rmse_log</span><span class="p">,</span> <span class="n">xgb_r2</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="p">(</span><span class="n">xgb</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
@@ -12463,25 +12463,25 @@ XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>XGBRegressor
-RMSE               : 2.2836
-RMSE of logarithms : 0.0305
-R2 score           : 0.922480
+RMSE               : 21546.7702
+RMSE of logarithms : 0.1181
+R2 score           : 0.926484
 
-Elapsed time: 00:00:18
+Elapsed time: 00:00:17
 
 GradientBoostingRegressor
-RMSE               : 2.3145
-RMSE of logarithms : 0.0310
-R2 score           : 0.920368
+RMSE               : 22004.9835
+RMSE of logarithms : 0.1224
+R2 score           : 0.923324
 
-Elapsed time: 00:00:13
+Elapsed time: 00:00:25
 
 RandomForestRegressor
-RMSE               : 2.5971
-RMSE of logarithms : 0.0346
-R2 score           : 0.899736
+RMSE               : 25372.8165
+RMSE of logarithms : 0.1352
+R2 score           : 0.898058
 
-Elapsed time: 00:00:31
+Elapsed time: 00:00:30
 
 </pre>
 </div>
@@ -12517,7 +12517,7 @@ R2 score           : 0.898058</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[133]:</div>
+<div class="prompt input_prompt">In&nbsp;[164]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">xgb_pred</span> <span class="o">=</span> <span class="n">cross_validation_prediction</span><span class="p">(</span><span class="n">xgb</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
@@ -12543,15 +12543,15 @@ R2 score           : 0.898058</p>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>XGBRegressor
 
-Elapsed time: 00:00:16
+Elapsed time: 00:00:17
 
 GradientBoostingRegressor
 
-Elapsed time: 00:00:12
+Elapsed time: 00:00:13
 
 RandomForestRegressor
 
-Elapsed time: 00:00:28
+Elapsed time: 00:00:32
 
 predictions_rfr: (1459L,)
 target_train: (1458L,)
@@ -12565,23 +12565,34 @@ target_train: (1458L,)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
+<div class="prompt input_prompt">In&nbsp;[167]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">target_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
-<span class="n">xgb_pred_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">xgb_pred</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;XGBoost&#39;</span><span class="p">)</span>
-<span class="n">show_metrics</span><span class="p">(</span><span class="n">target_normal</span><span class="p">,</span><span class="n">xgb_pred_normal</span> <span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="n">gbr_pred_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">gbr_pred</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Gradient Boost&#39;</span><span class="p">)</span>
-<span class="n">show_metrics</span><span class="p">(</span><span class="n">target_normal</span><span class="p">,</span><span class="n">gbr_pred_normal</span> <span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="n">rfr_pred_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">rfr_pred</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Random Forest&#39;</span><span class="p">)</span>
-<span class="n">show_metrics</span><span class="p">(</span><span class="n">target_normal</span><span class="p">,</span> <span class="n">rfr_pred_normal</span> <span class="p">)</span>
-
-<span class="n">predictions_normal</span> <span class="o">=</span> <span class="n">xgb_w</span><span class="o">*</span> <span class="n">xgb_pred_normal</span> <span class="o">+</span> <span class="n">gbr_w</span> <span class="o">*</span> <span class="n">gbr_pred_normal</span> <span class="o">+</span> <span class="n">rfr_w</span> <span class="o">*</span> <span class="n">rfr_pred_normal</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">unskew_data</span><span class="p">:</span>
+    <span class="n">target_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
+    <span class="n">xgb_pred_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">xgb_pred</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;XGBoost&#39;</span><span class="p">)</span>
+    <span class="n">show_metrics</span><span class="p">(</span><span class="n">target_normal</span><span class="p">,</span><span class="n">xgb_pred_normal</span> <span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">gbr_pred_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">gbr_pred</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Gradient Boost&#39;</span><span class="p">)</span>
+    <span class="n">show_metrics</span><span class="p">(</span><span class="n">target_normal</span><span class="p">,</span><span class="n">gbr_pred_normal</span> <span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">rfr_pred_normal</span> <span class="o">=</span> <span class="n">skew_inv_boxcox1p</span><span class="p">(</span><span class="n">rfr_pred</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Random Forest&#39;</span><span class="p">)</span>
+    <span class="n">show_metrics</span><span class="p">(</span><span class="n">target_normal</span><span class="p">,</span> <span class="n">rfr_pred_normal</span> <span class="p">)</span>
+    <span class="n">predictions_normal</span> <span class="o">=</span> <span class="n">xgb_w</span><span class="o">*</span> <span class="n">xgb_pred_normal</span> <span class="o">+</span> <span class="n">gbr_w</span> <span class="o">*</span> <span class="n">gbr_pred_normal</span> <span class="o">+</span> <span class="n">rfr_w</span> <span class="o">*</span> <span class="n">rfr_pred_normal</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;XGBoost&#39;</span><span class="p">)</span>
+    <span class="n">show_metrics</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">xgb_pred</span> <span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Gradient Boost&#39;</span><span class="p">)</span>
+    <span class="n">show_metrics</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">gbr_pred</span> <span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Random Forest&#39;</span><span class="p">)</span>
+    <span class="n">show_metrics</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">rfr_pred</span> <span class="p">)</span>
+    <span class="n">predictions_normal</span> <span class="o">=</span> <span class="n">xgb_w</span><span class="o">*</span> <span class="n">xgb_pred</span> <span class="o">+</span> <span class="n">gbr_w</span> <span class="o">*</span> <span class="n">gbr_pred</span> <span class="o">+</span> <span class="n">rfr_w</span> <span class="o">*</span> <span class="n">rfr_pred</span>
+    <span class="n">target_normal</span> <span class="o">=</span> <span class="n">target</span>
 </pre></div>
 
 </div>
@@ -12595,38 +12606,23 @@ target_train: (1458L,)
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>XGBoost
-RMSE               : 21788.4617
-RMSE of logarithms : 0.1157
-R2 score           : 0.924825
+RMSE               : 21546.7702
+RMSE of logarithms : 0.1181
+R2 score           : 0.926484
 
 
 Gradient Boost
-RMSE               : 21974.9265
-RMSE of logarithms : 0.1175
-R2 score           : 0.923533
+RMSE               : 22004.9835
+RMSE of logarithms : 0.1224
+R2 score           : 0.923324
 
 
 Random Forest
-RMSE               : 25755.3471
-RMSE of logarithms : 0.1313
-R2 score           : 0.894961
-
-
-Stacked regressions
-RMSE               : 21935.3993
-RMSE of logarithms : 0.1147
-R2 score           : 0.923808
+RMSE               : 25372.8165
+RMSE of logarithms : 0.1352
+R2 score           : 0.898058
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[154]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(21935.399263014428, 0.11466905239799517, 0.92380809569312605)</pre>
-</div>
-
 </div>
 
 </div>
@@ -14014,7 +14010,7 @@ MJ0IBQAAAMB0IhQAAAAA030AdbpSnFbzo94AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[156]:</div>
+<div class="prompt input_prompt">In&nbsp;[168]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Stacked regressions&#39;</span><span class="p">)</span>
@@ -14032,18 +14028,18 @@ MJ0IBQAAAMB0IhQAAAAA030AdbpSnFbzo94AAAAASUVORK5CYII=
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Stacked regressions
-RMSE               : 21935.3993
-RMSE of logarithms : 0.1147
-R2 score           : 0.923808
+RMSE               : 21691.8137
+RMSE of logarithms : 0.1168
+R2 score           : 0.925491
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[156]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[168]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(21935.399263014428, 0.11466905239799517, 0.92380809569312605)</pre>
+<pre>(21691.813719303176, 0.11676897395131257, 0.92549087328825363)</pre>
 </div>
 
 </div>
@@ -14063,7 +14059,7 @@ R2 score           : 0.923808
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[169]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># use all data for learning</span>
@@ -14090,7 +14086,7 @@ R2 score           : 0.923808
 <span class="n">out_preds</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 <span class="n">out_preds</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_ids</span>
 <span class="n">out_preds</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">predictions</span>
-<span class="n">out_preds</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;output6.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">out_preds</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;output7.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
 <span class="n">stopwatch</span><span class="o">.</span><span class="n">print_elapsed_time</span><span class="p">()</span>
 </pre></div>
@@ -14106,16 +14102,16 @@ R2 score           : 0.923808
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-Elapsed time: 00:00:09
+Elapsed time: 00:00:08
 
 
-Elapsed time: 00:00:12
+Elapsed time: 00:00:10
 
 
-Elapsed time: 00:00:17
+Elapsed time: 00:00:16
 
 
-Elapsed time: 00:00:17
+Elapsed time: 00:00:16
 
 </pre>
 </div>
