@@ -29,6 +29,14 @@ def remove_this_Ids(df, toremove):
 
 # Adding total sqfootage feature
 def add_TotalSF(data):
+    data['TotalSF'] = data['TotalBsmtSF'] + data['1stFlrSF'] + data['2ndFlrSF']
+    return data
+
+
+# Adding total sqfootage feature
+def add_TotalSF_GarageArea(data):
+    column = 'GarageArea'
+    data.loc[data[column].isnull(), column] = 0
     data['TotalSF'] = data['TotalBsmtSF'] + data['1stFlrSF'] + data['2ndFlrSF'] + data['GarageArea']
     return data
 
@@ -46,6 +54,9 @@ def unskew_columns(data, columns):
         data = do_unskew(data, col)
     return data
 
+def skew_back(data):
+    data = np.exp1p(data)
+    return data
 
 def remove_outliers_simple(data):
     data = data.drop(data[(data['GrLivArea']>4000) & (data['SalePrice']<300000)].index)
