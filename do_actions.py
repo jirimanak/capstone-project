@@ -44,7 +44,6 @@ def add_TotalSF_log(data):
     data['TotalSF_log'] = np.log(data['TotalBsmtSF'] + data['1stFlrSF'] + data['2ndFlrSF'])
     return data
 
-
 def unskew(data, col_name):
     data[col_name] = np.log1p(data[col_name])
     return data
@@ -55,7 +54,7 @@ def unskew_columns(data, columns):
     return data
 
 def skew_back(data):
-    data = np.exp1p(data)
+    data = np.expm1(data)
     return data
 
 def remove_outliers_simple(data):
