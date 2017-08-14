@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a92a33e6-2eef-439f-890a-f67059057165" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVR_train_vs_test_CV.png" afterPath="$PROJECT_DIR$/SVR_train_vs_test_CV.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_analysis-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_analysis-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.docx" afterPath="$PROJECT_DIR$/report.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/model_tuning-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/model_tuning-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVR_train_vs_test_CV.csv" afterPath="$PROJECT_DIR$/SVR_train_vs_test_CV.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_analysis.ipynb" afterPath="$PROJECT_DIR$/data_analysis.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do_actions.py" afterPath="$PROJECT_DIR$/do_actions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model_tuning.ipynb" afterPath="$PROJECT_DIR$/model_tuning.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output7.csv" afterPath="$PROJECT_DIR$/output7.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stopwatch.py" afterPath="$PROJECT_DIR$/stopwatch.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svm_regression.ipynb" afterPath="$PROJECT_DIR$/svm_regression.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="do_actions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="do_actions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do_actions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-416">
@@ -66,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stopwatch.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stopwatch.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stopwatch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="340">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -91,18 +88,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/stopwatch.py" />
         <option value="$PROJECT_DIR$/data/some.py" />
         <option value="$PROJECT_DIR$/usefull_methods.py" />
         <option value="$PROJECT_DIR$/do_actions.py" />
+        <option value="$PROJECT_DIR$/stopwatch.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-2812" />
-    <option name="y" value="-206" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-3033" />
+    <option name="y" value="-102" />
     <option name="width" value="2808" />
-    <option name="height" value="2089" />
+    <option name="height" value="1948" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -190,14 +187,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2812" y="-206" width="2808" height="2089" extended-state="0" />
+    <frame x="-3033" y="-102" width="2808" height="1948" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17036216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17036216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49882767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29983792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39122808" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -290,14 +288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stopwatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../customer_segments/visuals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -331,6 +321,14 @@
           <folding>
             <element signature="e#1#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stopwatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

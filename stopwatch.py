@@ -4,6 +4,11 @@ class Stopwatch:
     def __init__(self):
         self.start_time = 0
 
+    def ctime(self):
+        c = time.gmtime()
+        t = time.strftime("%a, %d %b %Y %H:%M:%S +0000", c)
+        return t
+    
     def start(self):
         self.start_time = time.time()
 
